@@ -5,7 +5,7 @@ const alarm = array => {
     let parsed = parseInt(number, 10);
     if (!isNaN([parsed]) && parsed >= 0) {
       setTimeout(() => {
-        process.stdout.write('Beep. Just pretend you hear a loud beep. Thanks.\n');
+        process.stdout.write('\x07');
       }, parsed * 1000);
     }
   }
